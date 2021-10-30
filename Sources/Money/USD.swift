@@ -1,6 +1,6 @@
 import Foundation
 
-public enum USD: Currency {
+public enum USD: CurrencyType {
   public static var code = "USD"
 
   public static var symbol = "$"

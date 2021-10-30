@@ -1,6 +1,8 @@
-public struct Money {
-    public private(set) var text = "Hello, World!"
+import Foundation
+public struct Money<Currency: CurrencyType> {
 
-    public init() {
-    }
+  public var amount: Decimal
+  public var currency: Currency.Type {
+    Currency.self
+  }
 }
